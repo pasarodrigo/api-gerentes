@@ -1,0 +1,12 @@
+{
+  "name": "api-gerentes",
+  "version": "1.0.0",
+  "description": "API simples para retornar gerente por estado (UF)",
+  "main": "api-gerentes.js",
+  "scripts": {
+    "start": "node api-gerentes.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
