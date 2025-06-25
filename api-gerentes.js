@@ -1,7 +1,12 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-app.use(cors({ origin: 'https://edenredbpms.zeev.it' }));
+app.use(cors({
+  origin: 'https://edenredbpms.zeev.it',
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type']
+}));
+app.options('*', cors());
 app.use(express.json());
 
 // Gerentes por UF
