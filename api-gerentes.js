@@ -4,9 +4,17 @@ app.use(express.json());
 
 // Gerentes por UF
 const gerentesPorUF = {
-  'RS': ['João', 'Ana'],
-  'SP': ['Carlos', 'Marina', 'Eduardo'],
-  'RJ': ['Fernanda'],
+  'AC': ['STEFFERSON MOURA DE OLIVEIRA'],
+  'AM': ['STEFFERSON MOURA DE OLIVEIRA'],
+  'AP': ['STEFFERSON MOURA DE OLIVEIRA'],
+  'CE': ['STEFFERSON MOURA DE OLIVEIRA'],
+  'CE': ['STEFFERSON MOURA DE OLIVEIRA'],
+  'MA': ['STEFFERSON MOURA DE OLIVEIRA'],
+  'PA': ['STEFFERSON MOURA DE OLIVEIRA'],
+  'PB': ['STEFFERSON MOURA DE OLIVEIRA','LUIZ'],
+  'PI': ['STEFFERSON MOURA DE OLIVEIRA'],
+  'RN': ['STEFFERSON MOURA DE OLIVEIRA','LUIZ'],
+  'RR': ['STEFFERSON MOURA DE OLIVEIRA'],
 };
 
 // Controle de rotação por UF
