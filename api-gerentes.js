@@ -1,27 +1,12 @@
 const express = require('express');
-const cors = require('cors');
 const app = express();
-app.use(cors({
-  origin: 'https://edenredbpms.zeev.it',
-  methods: ['GET', 'POST', 'OPTIONS'],
-  allowedHeaders: ['Content-Type']
-}));
-app.options('*', cors());
 app.use(express.json());
 
 // Gerentes por UF
 const gerentesPorUF = {
-  'AC': ['STEFFERSON MOURA DE OLIVEIRA'],
-  'AM': ['STEFFERSON MOURA DE OLIVEIRA'],
-  'AP': ['STEFFERSON MOURA DE OLIVEIRA'],
-  'CE': ['STEFFERSON MOURA DE OLIVEIRA'],
-  'CE': ['STEFFERSON MOURA DE OLIVEIRA'],
-  'MA': ['STEFFERSON MOURA DE OLIVEIRA'],
-  'PA': ['STEFFERSON MOURA DE OLIVEIRA'],
-  'PB': ['STEFFERSON MOURA DE OLIVEIRA','LUIZ'],
-  'PI': ['STEFFERSON MOURA DE OLIVEIRA'],
-  'RN': ['STEFFERSON MOURA DE OLIVEIRA','LUIZ'],
-  'RR': ['STEFFERSON MOURA DE OLIVEIRA'],
+  'RS': ['João', 'Ana'],
+  'SP': ['Carlos', 'Marina', 'Eduardo'],
+  'RJ': ['Fernanda'],
 };
 
 // Controle de rotação por UF
@@ -60,9 +45,7 @@ app.post('/atribuir-gerentes', (req, res) => {
 });
 
 // Inicia o servidor
-
-const PORT = process.env.PORT || 3000;
-
+const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`API rodando em http://localhost:${PORT}`);
 });
