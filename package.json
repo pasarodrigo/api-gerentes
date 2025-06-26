@@ -2,10 +2,10 @@
   "name": "api-gerentes",
   "version": "1.0.0",
   "description": "API para gerenciamento de gerentes com suporte a CORS e Express",
-  "main": "api-gerentes_com_cors.js",
+  "main": "api-gerentes.js",
   "scripts": {
-    "start": "node api-gerentes_com_cors.js",
-    "dev": "nodemon api-gerentes_com_cors.js"
+    "start": "node api-gerentes.js",
+    "dev": "nodemon api-gerentes.js"
   },
   "author": "",
   "license": "ISC",
