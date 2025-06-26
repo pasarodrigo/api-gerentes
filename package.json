@@ -1,12 +1,19 @@
 {
   "name": "api-gerentes",
   "version": "1.0.0",
-  "description": "API simples para retornar gerente por estado (UF)",
-  "main": "api-gerentes.js",
+  "description": "API para gerenciamento de gerentes com suporte a CORS e Express",
+  "main": "api-gerentes_com_cors.js",
   "scripts": {
-    "start": "node api-gerentes.js"
+    "start": "node api-gerentes_com_cors.js",
+    "dev": "nodemon api-gerentes_com_cors.js"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
